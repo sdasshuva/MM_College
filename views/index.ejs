@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%- title %></title>
+    <script type="text/javascript" src="/extjs/ext-all.js"></script>
+    <script type="text/javascript" src="/extjs/build/ext-theme-classic.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        var socket = io();
+        var user = {};
+        var title = '';
+    </script>
+
+    <script type="text/javascript">
+        title = '<%- title %>';
+        user.username = '<%- loginUserName %>';
+        user.id = '<%- loginUserId %>';
+    </script>
+    <link rel="stylesheet" href="/extjs/build/resources/ext-theme-classic-all.css">
+    <%-  extjs_app_scripts %>
+</head>
+</html>
